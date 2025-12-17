@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Південноукраїнська школа мистецтв</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="courses-page">
+
+<header class="site-header">
+  <div class="container header-inner">
+    <!-- Логотип -->
+    <a class="brand" href="index.html">
+      <span class="brand-badge"></span>
+      <span>Південноукраїнська школа мистецтв</span>
+    </a>
+
+    <!-- Правий блок: меню + тема -->
+    <div class="header-actions">
+      <nav class="nav">
+        <a href="index.html">Головна</a>
+        <a href="courses.html">Напрями</a>
+        <a href="teachers.html">Викладачі</a>
+        <a href="prices.html">Ціни</a>
+        <a href="contacts.html">Контакти</a>
+        <a href="news.html">Новини</a>
+      </nav>
+
+      <!-- КНОПКА ТЕМИ -->
+      <button class="theme-toggle" id="themeToggle" type="button">
+        <span class="theme-icon">🌙</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main class="container courses-page">
+  <section class="section">
+    <h1 class="h1">Напрями навчання</h1>
+    <p class="lead">Обирай відділ - нижче знайдеш деталі, інструменти та формати занять.</p>
+
+    <!-- Відділи (картки) -->
+    <div class="dept-grid" id="deptGrid">
+      <button class="dept-card is-active" data-target="dept-music" type="button">
+        <h3>Музичний відділ</h3>
+      </button>
+
+      <button class="dept-card" data-target="dept-art" type="button">
+        <h3>Художній відділ</h3>
+      </button>
+
+      <button class="dept-card" data-target="dept-dance" type="button">
+        <h3>Хореографічний відділ</h3>
+      </button>
+    </div>
+  </section>
+
+  <!-- Деталі (3 окремі блоки, НЕ вкладені один в один) -->
+  <section class="dept-details">
+
+    <!-- Музичний -->
+    <div class="dept-block" id="dept-music">
+      <div class="dept-head">
+        <h2 class="section-title">Музичний відділ</h2>
+      </div>
+
+      <div class="info-grid">
+        <div class="card feature">
+          <h3>Інструменти</h3>
+          <ul class="list">
+            <li>Фортепіано</li>
+            <li>Скрипка</li>
+            <li>Духові інструменти</li>
+            <li>Гітара</li>
+            <li>Домра</li>
+            <li>Баян</li>
+            <li>Бандура</li>
+            <li>Акордеон</li>
+          </ul>
+        </div>
+
+        <div class="card feature">
+          <h3>Вокал</h3>
+          <ul class="list">
+          </ul>
+        </div>
+
+        <div class="card feature">
+          <h3>Формат занять</h3>
+          <ul class="list">
+            <li>*Індивідуально або ...*</li>
+            <li>*тривалість заняття*</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Художній -->
+    <div class="dept-block" id="dept-art">
+      <div class="dept-head">
+        <h2 class="section-title">Художній відділ</h2>
+      </div>
+
+      <div class="info-grid">
+        <div class="card feature">
+          <h3>Напрями</h3>
+          <ul class="list">
+            <!-- додаси потім -->
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Хореографічний -->
+    <div class="dept-block" id="dept-dance">
+      <div class="dept-head">
+        <h2 class="section-title">Хореографічний відділ</h2>
+      </div>
+
+      <div class="info-grid">
+        <div class="card feature">
+          <h3>Формат</h3>
+          <ul class="list">
+            <li>Групові заняття</li>
+            <li>Рівні: початковий...</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div>© <span id="year"></span> Південноукраїнська школа мистецтв. Усі права захищено.</div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+<script src="js/main.js"></script>
+</body>
+</html>

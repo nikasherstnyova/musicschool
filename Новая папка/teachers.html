@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Південноукраїнська школа мистецтв</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-badge"></span>
+      <span>Південноукраїнська школа мистецтв</span>
+    </a>
+
+    <div class="header-actions">
+      <nav class="nav">
+        <a href="index.html">Головна</a>
+        <a href="courses.html">Напрями</a>
+        <a href="teachers.html">Викладачі</a>
+        <a href="prices.html">Ціни</a>
+        <a href="contacts.html">Контакти</a>
+        <a href="news.html">Новини</a>
+      </nav>
+
+      <button class="theme-toggle" id="themeToggle" type="button">
+        <span class="theme-icon">🌙</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- Заголовок сторінки (в контейнері) -->
+  <section class="section">
+    <div class="container">
+      <h1 class="h1">Викладачі</h1>
+      <p class="lead"></p>
+    </div>
+  </section>
+
+  <!-- Відділи (фон на всю ширину) -->
+  <section class="dept-section">
+    <div class="container">
+      <h2 class="dept-title">Оркестровий відділ</h2>
+      <div id="teachersGrid-orchestra" class="teachers-grid"></div>
+      <p id="teachersHint-orchestra" class="small muted" style="display:none;"></p>
+    </div>
+  </section>
+
+  <section class="dept-section">
+    <div class="container">
+      <h2 class="dept-title">Фортепіанний відділ</h2>
+      <div id="teachersGrid-piano" class="teachers-grid"></div>
+      <p id="teachersHint-piano" class="small muted" style="display:none;"></p>
+    </div>
+  </section>
+
+  <section class="dept-section">
+    <div class="container">
+      <h2 class="dept-title">Художній відділ</h2>
+      <div id="teachersGrid-art" class="teachers-grid"></div>
+      <p id="teachersHint-art" class="small muted" style="display:none;"></p>
+    </div>
+  </section>
+
+  <section class="dept-section">
+    <div class="container">
+      <h2 class="dept-title">Теоретично-хоровий відділ та клас сольного співу</h2>
+      <div id="teachersGrid-theory" class="teachers-grid"></div>
+      <p id="teachersHint-theory" class="small muted" style="display:none;"></p>
+    </div>
+  </section>
+
+  <section class="dept-section">
+    <div class="container">
+      <h2 class="dept-title">Хореографічний відділ</h2>
+      <div id="teachersGrid-dance" class="teachers-grid"></div>
+      <p id="teachersHint-dance" class="small muted" style="display:none;"></p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div>© <span id="year"></span> Південноукраїнська школа мистецтв. Усі права захищено.</div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+<script src="js/main.js"></script>
+</body>
+</html>

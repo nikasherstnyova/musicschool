@@ -1,0 +1,250 @@
+[
+  {
+    "slug": "guzenko",
+    "department": "Оркестровий відділ",
+    "name": "Гузенко Микола Ігорович",
+    "role": "викладач духових інструментів",
+    "photo": "img/teachers/guzenko.jpg",
+    "bio": ""
+  },
+  {
+    "slug": "kozak",
+    "department": "Оркестровий відділ",
+    "name": "Козак Ольга Володимирівна",
+    "role": "викладач баяну, акордеону",
+    "photo": "img/teachers/kozak.jpg",
+    "bio": ""
+  },
+  {
+    "slug": "korotina",
+    "department": "Оркестровий відділ",
+    "name": "Коротіна Ольга Андріївна",
+    "role": "викладач скрипки",
+    "photo": "img/teachers/korotina.jpg",
+    "bio": ""
+  },
+  {
+    "slug": "ostapchuk",
+    "department": "Оркестровий відділ",
+    "name": "Остапчук Леонід Васильович",
+    "role": "викладач гітари",
+    "photo": "img/teachers/ostapchuk.jpg",
+    "bio": ""
+  },
+  {
+    "slug": "sorokina",
+    "department": "Оркестровий відділ",
+    "name": "Сорокіна Олена Іванівна",
+    "role": "завідуюча відділом, викладач скрипки",
+    "photo": "img/teachers/sorokina.jpg",
+    "bio": ""
+  },
+  {
+    "slug": "tomilina",
+    "department": "Оркестровий відділ",
+    "name": "Томіліна Євгенія Володимирівна",
+    "role": "викладач скрипки",
+    "photo": "img/teachers/tomilina.jpg",
+    "bio": ""
+  },
+  {
+    "slug": "ukolova",
+    "department": "Оркестровий відділ",
+    "name": "Уколова Вікторія Олексіївна",
+    "role": "викладач гітари, домри",
+    "photo": "img/teachers/ukolova.jpg",
+    "bio": ""
+  },
+  {
+    "slug": "sherstnyov",
+    "department": "Оркестровий відділ",
+    "name": "Шерстньов Олександр Володимирович",
+    "role": "директор, викладач духових інструментів",
+    "photo": "img/teachers/sherstnyov.jpg",
+    "bio": ""
+  },
+  {
+    "slug": "karabinenko",
+    "department": "Теоретично-хоровий відділ та клас сольного співу",
+    "name": "Карабіненко Юлія Олександрівна",
+    "role": "викладач теоретичних дисциплін",
+    "photo": "img/teachers/karabinenko.jpg",
+    "bio": ""
+  },
+  {
+    "slug": "kravtsova",
+    "department": "Теоретично-хоровий відділ та клас сольного співу",
+    "name": "Кравцова Олена Миколаївна",
+    "role": "завідуюча відділом, викладач теоретичних дисциплін",
+    "photo": "img/teachers/kravtsova.jpg",
+    "bio": ""
+  },
+  {
+    "slug": "loseva",
+    "department": "Теоретично-хоровий відділ та клас сольного співу",
+    "name": "Лосєва Тетяна Аркадіївна",
+    "role": "завуч, викладач теоретичних дисциплін",
+    "photo": "img/teachers/loseva.jpg",
+    "bio": ""
+  },
+  {
+    "slug": "pecheniuk",
+    "department": "Теоретично-хоровий відділ та клас сольного співу",
+    "name": "Печенюк Оксана Дмитрівна",
+    "role": "викладач сольного співу",
+    "photo": "img/teachers/pecheniuk.jpg",
+    "bio": ""
+  },
+  {
+    "slug": "prysiazhna",
+    "department": "Теоретично-хоровий відділ та клас сольного співу",
+    "name": "Присяжна Оксана Сергіївна",
+    "role": "викладач сольного співу",
+    "photo": "img/teachers/prysiazhna.jpg",
+    "bio": ""
+  },
+  {
+    "slug": "ruskykh",
+    "department": "Теоретично-хоровий відділ та клас сольного співу",
+    "name": "Руських Лариса Олександрівна",
+    "role": "викладач сольного співу",
+    "photo": "img/teachers/ruskykh.jpg",
+    "bio": ""
+  },
+  {
+    "slug": "andreeva",
+    "department": "Фортепіанний відділ",
+    "name": "Андрєєва Олександра Валентинівна",
+    "role": "викладач фортепіано, концертмейстер",
+    "photo": "img/teachers/andreeva.jpg",
+    "bio": ""
+  },
+  {
+    "slug": "voronova",
+    "department": "Фортепіанний відділ",
+    "name": "Воронова Юля Іванівна",
+    "role": "концертмейстер",
+    "photo": "img/teachers/voronova.jpg",
+    "bio": ""
+  },
+  {
+    "slug": "glushchuk",
+    "department": "Фортепіанний відділ",
+    "name": "Глущук Катерина Сергіївна",
+    "role": "викладач фортепіано, концертмейстер",
+    "photo": "img/teachers/glushchuk.jpg",
+    "bio": ""
+  },
+  {
+    "slug": "kozhevnikova",
+    "department": "Фортепіанний відділ",
+    "name": "Кожевнікова Світлана Валентинівна",
+    "role": "викладач фортепіано",
+    "photo": "img/teachers/kozhevnikova.jpg",
+    "bio": ""
+  },
+  {
+    "slug": "kolotulo",
+    "department": "Фортепіанний відділ",
+    "name": "Колотило Анастасія Сергієвна",
+    "role": "завідуюча відділом, викладач фортепіано, концертмейстер",
+    "photo": "img/teachers/kolotulo.jpg",
+    "bio": ""
+  },
+  {
+    "slug": "korovina",
+    "department": "Фортепіанний відділ",
+    "name": "Коровіна Анастасія Ігорівна",
+    "role": "викладач фортепіано, концертмейстер",
+    "photo": "img/teachers/korovina.jpg",
+    "bio": ""
+  },
+  {
+    "slug": "korolyova",
+    "department": "Фортепіанний відділ",
+    "name": "Корольова Наталія Аркадіївна",
+    "role": "викладач фортепіано, концертмейстер",
+    "photo": "img/teachers/korolyova.jpg",
+    "bio": ""
+  },
+  {
+    "slug": "medchuk",
+    "department": "Фортепіанний відділ",
+    "name": "Медчук Тетяна Володимирівна",
+    "role": "викладач фортепіано",
+    "photo": "img/teachers/medchuk.jpg",
+    "bio": ""
+  },
+  {
+    "slug": "ohrimchuk",
+    "department": "Фортепіанний відділ",
+    "name": "Охрімчук Галина Феліксівна",
+    "role": "викладач фортепіано",
+    "photo": "img/teachers/ohrimchuk.jpg",
+    "bio": ""
+  },
+  {
+    "slug": "parakonna",
+    "department": "Фортепіанний відділ",
+    "name": "Пароконна Ольга Вікторівна",
+    "role": "викладач фортепіано",
+    "photo": "img/teachers/parakonna.jpg",
+    "bio": ""
+  },
+  {
+    "slug": "parakonnaT",
+    "department": "Фортепіанний відділ",
+    "name": "Пароконна Тетяна Василівна",
+    "role": "викладач фортепіано",
+    "photo": "img/teachers/parakonnaT.jpg",
+    "bio": ""
+  },
+  {
+    "slug": "batrak",
+    "department": "Хореографічний відділ",
+    "name": "Батрак Анатолій Миколайович",
+    "role": "завідуючий відділом",
+    "photo": "img/teachers/batrak.jpg",
+    "bio": ""
+  },
+  {
+    "slug": "achkasova",
+    "department": "Художній відділ",
+    "name": "Ачкасова Ірина Петрівна",
+    "role": "завідуюча відділом, викладач художнього відділу",
+    "photo": "img/teachers/achkasova.jpg",
+    "bio": ""
+  },
+  {
+    "slug": "achkasovaM",
+    "department": "Художній відділ",
+    "name": "Ачкасова Марія Владиславівна",
+    "role": "викладач художнього відділу",
+    "photo": "img/teachers/achkasovaM.jpg",
+    "bio": ""
+  },
+  {
+    "slug": "voinych",
+    "department": "Художній відділ",
+    "name": "Войнич Тетяна Анатоліївна",
+    "role": "викладач художнього відділу",
+    "photo": "img/teachers/voinych.jpg",
+    "bio": ""
+  },
+  {
+    "slug": "povozniuk",
+    "department": "Художній відділ",
+    "name": "Повознюк Марина Володимирівна",
+    "role": "викладач художнього відділу",
+    "photo": "img/teachers/povozniuk.jpg",
+    "bio": ""
+  },
+  {
+    "slug": "tokar",
+    "department": "Художній відділ",
+    "name": "Токар Наталія Анатоліївна",
+    "role": "викладач художнього відділу",
+    "photo": "img/teachers/tokar.jpg",
+    "bio": ""
+  }
+]

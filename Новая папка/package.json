@@ -1,0 +1,8 @@
+{
+  "name": "music-school-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/generate-posts.mjs && node scripts/generate-teachers.mjs"
+  }
+}

@@ -1,0 +1,455 @@
+/* =========================
+   VARIABLES + BASE
+========================= */
+:root{
+  --bg:#0b0f19;
+  --panel:#121a2a;
+  --text:#eaf0ff;
+  --muted:#b7c2dd;
+  --line:rgba(255,255,255,.12);
+  --accent:#5aa8ff;
+  --accent2:#7c5cff;
+  --radius:18px;
+  --shadow: 0 12px 30px rgba(0,0,0,.35);
+  --max: 1100px;
+}
+
+:root[data-theme="light"]{
+  --bg:#f5f7ff;
+  --panel:#ffffff;
+  --text:#0b1220;
+  --muted:#526079;
+  --line:rgba(11,18,32,.12);
+  --shadow: 0 12px 30px rgba(11,18,32,.12);
+}
+
+*{ box-sizing:border-box; }
+html,body{ height:100%; }
+
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background:
+    radial-gradient(1000px 600px at 20% 10%, rgba(124,92,255,.14), transparent 60%),
+    radial-gradient(900px 600px at 80% 0%, rgba(90,168,255,.14), transparent 55%),
+    var(--bg);
+  color:var(--text);
+  line-height:1.55;
+}
+
+a{ color:inherit; text-decoration:none; }
+img{ max-width:100%; display:block; }
+
+.container{
+  width: min(100% - 32px, var(--max));
+  margin: 0 auto;
+}
+
+/* =========================
+   HEADER
+========================= */
+.site-header{
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(10px);
+  background: color-mix(in srgb, var(--bg) 72%, transparent);
+  border-bottom: 1px solid var(--line);
+}
+
+.header-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding: 14px 0;
+  gap: 16px;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-weight: 800;
+  letter-spacing:.4px;
+}
+.brand-badge{
+  width:36px; height:36px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  box-shadow: var(--shadow);
+}
+
+.header-actions{
+  display:flex;
+  align-items:center;
+  gap: 12px;
+}
+
+.nav{
+  display:flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.nav a{
+  padding: 10px 12px;
+  border:1px solid transparent;
+  border-radius: 999px;
+  color: var(--muted);
+}
+.nav a:hover{
+  border-color: var(--line);
+  color: var(--text);
+}
+.nav a.active{
+  background: rgba(90,168,255,.12);
+  border-color: rgba(90,168,255,.35);
+  color: var(--text);
+}
+
+/* Theme button */
+.theme-toggle{
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,.04);
+  color: var(--text);
+  cursor:pointer;
+  user-select:none;
+}
+.theme-toggle:hover{ filter: brightness(1.05); }
+.theme-toggle .theme-icon{ font-size: 18px; }
+
+/* =========================
+   COMMON UI
+========================= */
+.section{
+  padding: 22px 0;
+}
+
+.h1{
+  font-size: clamp(28px, 3.4vw, 44px);
+  line-height:1.1;
+  margin:0 0 10px;
+}
+
+.lead{
+  color: var(--muted);
+  margin:0 0 16px;
+  font-size: 16px;
+}
+
+.card{
+  background: color-mix(in srgb, var(--panel) 82%, transparent);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.card-pad{ padding: 18px; }
+
+.muted{ color: var(--muted); }
+.small{ font-size: 13px; color: var(--muted); }
+
+.footer{
+  padding: 24px 0 40px;
+  border-top: 1px solid var(--line);
+  margin-top: 24px;
+  color: var(--muted);
+  text-align: center;
+}
+
+/* =========================
+   HERO
+========================= */
+.hero{
+  padding: 46px 0 18px;
+}
+.hero-grid{
+  display:grid;
+  grid-template-columns: 1.2fr .8fr;
+  gap: 18px;
+}
+@media (max-width: 900px){
+  .hero-grid{ grid-template-columns: 1fr; }
+}
+
+/* Buttons */
+.actions{ display:flex; gap:10px; flex-wrap:wrap; }
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  padding: 11px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,.04);
+  color: var(--text);
+  cursor:pointer;
+}
+.btn.primary{
+  border-color: rgba(90,168,255,.45);
+  background: linear-gradient(135deg, rgba(90,168,255,.22), rgba(124,92,255,.18));
+}
+.btn:hover{ filter: brightness(1.05); }
+
+/* =========================
+   COURSES (Напрями)
+========================= */
+.dept-grid{
+  display: grid;
+  grid-auto-flow: column;
+  gap: 12px;
+  justify-content: center;
+}
+@media (max-width: 768px){
+  .dept-grid{
+    grid-auto-flow: row;
+    justify-items: center;
+  }
+}
+
+/* кнопки в напрямах */
+.dept-card{
+  appearance: none;
+  -webkit-appearance: none;
+  background: linear-gradient(135deg, rgba(90,168,255,.12), rgba(124,92,255,.10));
+  color: var(--text);
+  border: 1px solid rgba(90,168,255,.35);
+  border-radius: 12px;
+  padding: 12px 18px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  transition: transform .15s ease, filter .2s ease;
+}
+.dept-card:hover{
+  filter: brightness(1.03);
+  transform: translateY(-1px);
+}
+
+/* ✅ Відступ між секціями/картками у "Напрямах" */
+.courses-page .card{
+  margin-bottom: 16px;
+}
+.courses-page .card:last-child{
+  margin-bottom: 0;
+}
+
+/* =========================
+   CONTACTS
+========================= */
+.contacts-grid{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(280px, 420px));
+  gap: 18px;
+  justify-content: center;
+}
+
+.contact-link{
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px dashed transparent;
+  transition: color .2s ease, border-color .2s ease;
+}
+.contact-link:hover{
+  border-bottom-color: currentColor;
+  filter: brightness(1.05);
+}
+
+/* =========================
+   POSTS / NEWS
+========================= */
+.post-card{
+  padding: 14px;
+  display:flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.post-cover{
+  border-radius: 14px;
+  overflow:hidden;
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,.04);
+  aspect-ratio: 16 / 9;
+}
+.post-cover img{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+}
+.post-meta{
+  display:flex;
+  gap:10px;
+  align-items:center;
+  flex-wrap: wrap;
+  color: var(--muted);
+  font-size: 13px;
+}
+.badge{
+  display:inline-flex;
+  align-items:center;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,.04);
+}
+.post-title{
+  margin: 0;
+  font-size: 18px;
+}
+.post-text{
+  margin: 0;
+  color: var(--muted);
+}
+
+/* =========================
+   TEACHERS
+========================= */
+.teachers-grid{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(280px, 1fr));
+  gap: 14px;
+}
+@media (max-width: 900px){
+  .teachers-grid{ grid-template-columns: 1fr; }
+}
+
+.teacher-card{
+  display: grid;
+  grid-template-columns: 92px 1fr;
+  gap: 14px;
+  align-items: center;
+  padding: 16px;
+}
+
+.teacher-photo{
+  width: 92px;
+  height: 92px;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,.04);
+}
+.teacher-photo img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.teacher-name{
+  margin: 0 0 6px;
+  font-size: 18px;
+}
+.teacher-meta{
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* Відділи викладачів — НЕ фон, а нормальні відступи */
+.dept-section{
+  margin-top: 44px;
+}
+.dept-section:first-of-type{
+  margin-top: 0;
+}
+.dept-title{
+  text-align: center;
+  font-size: 28px;
+  font-weight: 800;
+  margin: 0 0 22px;
+  color: var(--text);
+}
+
+/* =========================
+   DEPARTMENTS PAGE (якщо треба)
+========================= */
+.departments-grid{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(320px, 1fr));
+  gap: 24px;
+}
+@media (max-width: 900px){
+  .departments-grid{ grid-template-columns: 1fr; }
+}
+
+.dept-block{
+  background: rgba(18,26,42,.65);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 18px;
+  box-shadow: var(--shadow);
+}
+.dept-block h2{
+  margin: 0 0 12px;
+  font-size: 18px;
+}
+.dept-block ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.dept-block li{
+  margin-bottom: 10px;
+  color: var(--muted);
+}
+.dept-block strong{
+  color: var(--text);
+}
+/* Відступ між відділами на сторінці "Напрями" */
+.courses-page .dept-block{
+  margin-top: 18px;
+}
+/* =========================
+   FIX: TEXT PADDING / SPACING
+========================= */
+
+/* 1) Базові відступи для тексту (щоб нічого не “липло”) */
+h1, h2, h3, p { margin: 0; }
+p { margin-top: 10px; }
+h2 { margin-bottom: 10px; }
+h3 { margin-bottom: 8px; }
+
+/* 2) Заголовок + опис всередині dept-block */
+.dept-head{
+  padding: 6px 6px 14px;
+}
+.dept-head .section-title{
+  margin: 0 0 10px;
+  font-size: 28px;
+  font-weight: 800;
+}
+.dept-head p{
+  margin: 0;
+}
+
+/* 3) Сітка карточок у відділі */
+.info-grid{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(220px, 1fr));
+  gap: 16px;
+}
+@media (max-width: 900px){
+  .info-grid{ grid-template-columns: 1fr; }
+}
+
+/* 4) Нормальні відступи для списків саме в “Напрямах” */
+.courses-page .list{
+  margin: 10px 0 0;
+  padding-left: 18px;      /* щоб текст не був впритул */
+  list-style: disc;
+}
+.courses-page .list li{
+  margin: 8px 0;
+}
+
+/* 5) Щоб текст у карточках мав внутрішній відступ (у тебе .feature є, але підсилюємо) */
+.card.feature{
+  padding: 18px;
+}

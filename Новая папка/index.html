@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Південноукраїнська школа мистецтв</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <!-- Логотип -->
+    <a class="brand" href="index.html">
+      <span class="brand-badge"></span>
+      <span>Південноукраїнська школа мистецтв</span>
+    </a>
+
+    <!-- Правий блок: меню + тема -->
+    <div class="header-actions">
+      <nav class="nav">
+        <a href="index.html">Головна</a>
+        <a href="courses.html">Напрями</a>
+        <a href="teachers.html">Викладачі</a>
+        <a href="prices.html">Ціни</a>
+        <a href="contacts.html">Контакти</a>
+        <a href="news.html">Новини</a>
+
+      </nav>
+
+      <!-- КНОПКА ТЕМИ -->
+      <button class="theme-toggle" id="themeToggle" type="button">
+        <span class="theme-icon">🌙</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+
+<main class="container">
+  <section class="hero">
+  <div class="hero-grid">
+    <div class="card card-pad">
+      <h1 class="h1">Навчання ...</h1>
+      <p class="lead"></p>
+      <div class="actions">
+        <a class="btn primary" href="contacts.html">Записатися на співбесіду</a>
+        <a class="btn" href="courses.html">Переглянути напрями</a>
+      </div>
+    </div>
+
+</section>
+
+
+</section>
+<!-- ТУТ контент сторінки -->
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div>© <span id="year"></span> Південноукраїнська школа мистецтв. Усі права захищено.</div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+<script src="js/main.js"></script>
+</body>
+</html>
