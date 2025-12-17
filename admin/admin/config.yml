@@ -1,0 +1,34 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "img/uploads"
+public_folder: "/img/uploads"
+
+collections:
+  - name: "posts"
+    label: "Новини / Події"
+    folder: "content/posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Заголовок", name: "title", widget: "string" }
+      - { label: "Дата", name: "date", widget: "datetime", format: "YYYY-MM-DD" }
+      - label: "Тип"
+        name: "type"
+        widget: "select"
+        options: ["news", "event"]
+        default: "news"
+      - { label: "Обкладинка", name: "cover", widget: "image", required: false }
+      - { label: "Текст", name: "body", widget: "markdown" }
+
+  - name: "teachers"
+    label: "Викладачі"
+    folder: "content/teachers"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Ім’я", name: "name", widget: "string" }
+      - { label: "Напрям / інструмент", name: "role", widget: "string", required: false }
+      - { label: "Фото", name: "photo", widget: "image", required: false }
+      - { label: "Опис", name: "bio", widget: "text", required: false }
